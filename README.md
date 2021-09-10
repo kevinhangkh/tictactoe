@@ -4,3 +4,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This is a simple TicTacToe app made with Angular 10.
 Uses UI library Nebular https://akveo.github.io/nebular/
+
+Demo here: tictactoe-omega-teal.vercel.app
