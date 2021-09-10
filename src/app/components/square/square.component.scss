@@ -8,8 +8,11 @@ button {
 .idle-button {
     background-color: #e2e7ee !important;
 
-    &:hover {
-        // background-color: #d7dce2 !important;
-        background-color: #acc4dd !important;
+    &.xplayer:hover {
+        background-color: #c4e5fd !important;
+    }
+    
+    &.oplayer:hover {
+        background-color: #ffc5d4 !important;
     }
 }

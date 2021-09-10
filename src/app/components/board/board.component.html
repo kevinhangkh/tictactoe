@@ -12,7 +12,7 @@
     
     <main [ngClass]="winner ? 'blocked' : ''">
         <app-square *ngFor="let s of squares; let i = index"
-        [value]="s"
+        [value]="s" [xIsNext]="xIsNext"
         (click)="makeMove(i)"></app-square>
     </main>
 </div>

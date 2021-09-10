@@ -20,11 +20,11 @@ export class BoardComponent implements OnInit {
   newGame(): void {
     this.squares = new Array(9).fill(null);
     this.winner = null;
-    this.xIsNext = false;
+    this.xIsNext = true;
   }
 
   get player() {
-    return this.xIsNext ? "O" : "X";
+    return this.xIsNext ? "X" : "O";
   }
 
   makeMove(index: number): void {
