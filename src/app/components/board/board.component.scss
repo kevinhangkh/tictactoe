@@ -1,0 +1,21 @@
+.board {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    padding: 1rem 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+}
+
+.blocked {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+app-square {
+    height: 200px;
+}

@@ -1,0 +1,14 @@
+button {
+    height: 200px;
+    width: 200px;
+    font-size: 50px !important;
+    border-radius: 7px !important;
+}
+
+.idle-button {
+    background-color: #e2e7ee !important;
+
+    &:hover {
+        background-color: #d7dce2 !important;
+    }
+}

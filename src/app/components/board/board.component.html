@@ -1,0 +1,18 @@
+<div class="board">
+    <h1>
+        Current player: <i class="fas fa-times fa-fw" *ngIf="player == 'X'"></i><span *ngIf="player == 'O'">O</span>
+    </h1>
+    
+    <button nbButton outline status="info" (click)="newGame()">Start a new game</button>
+    
+    <!-- <h2 *ngIf="winner != null"> -->
+    <h2 [ngStyle]="{'visibility': winner ? 'visible' : 'hidden'}">
+        Winner: <i class="fas fa-times fa-fw" *ngIf="winner == 'X'"></i><span *ngIf="winner == 'O'">O</span>
+    </h2>
+    
+    <main [ngClass]="winner ? 'blocked' : ''">
+        <app-square *ngFor="let s of squares; let i = index"
+        [value]="s"
+        (click)="makeMove(i)"></app-square>
+    </main>
+</div>
